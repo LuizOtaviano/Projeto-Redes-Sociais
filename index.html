@@ -43,5 +43,14 @@
             <div><a href="#"><img src="images/icone-whatsapp.svg" alt="icone whatsapp"></a></div>
         </footer>
     </div>
+
+    <script>
+        let divs = [...document.querySelectorAll("main > div")]
+        divs.forEach(d => {
+            d.addEventListener("click", evt => {
+               window.open(d.children[0].href)
+            })
+        })
+    </script>
 </body>
 </html>
